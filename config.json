@@ -1,0 +1,21 @@
+﻿{
+  "instance_code": "working",
+  "zephyr_environments_connection_string": "Data Source=192.168.2.231;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=medicaresqluser;Password=kantime_123;Max Pool Size=500;",
+  "sql_server_databases": [
+    "Master",
+	 "Private",
+    "WebLogs",
+    "KTLogs",
+    "MedicationLexi"    
+  ],
+  "maria_databases": [
+    "HL7Maria",
+    "ZephyrClinical_MariaDb",
+    "Identityv2",
+    "EvvService_Maria",
+    "PlatformDb",
+    "CaretrackerMaria",
+    "ConfigurationDb"
+  ],
+  "maria_db_dsn":"maria_db"
+}
