@@ -150,9 +150,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID8</x:Reference>
+      <x:Reference>__ReferenceID9</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID8">
+    <FlowStep x:Name="__ReferenceID9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,127.5</av:Point>
@@ -258,11 +258,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">83,199</av:Point>
-              <av:Size x:Key="ShapeSize">434,82</av:Size>
+              <av:Size x:Key="ShapeSize">434,83</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">517,240 540,240</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">instance_code</CSharpReference>
@@ -300,11 +300,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">83,299</av:Point>
-                      <av:Size x:Key="ShapeSize">434,82</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">300,381 300,404 310,404</av:PointCollection>
+                      <av:Size x:Key="ShapeSize">434,83</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">300,381 300,404</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
                         <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">zephyr_environments_connection_string</CSharpReference>
@@ -320,9 +320,9 @@
                     <FlowStep x:Name="__ReferenceID4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">210,404</av:Point>
+                          <av:Point x:Key="ShapeLocation">200,404</av:Point>
                           <av:Size x:Key="ShapeSize">200,53</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">410,430 440,430</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">400,430 440,430</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="LogMessage_6">
@@ -403,7 +403,7 @@
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <av:Point x:Key="ShapeLocation">440,494</av:Point>
                                       <av:Size x:Key="ShapeSize">200,53</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">540,546 540,596</av:PointCollection>
+                                      <av:PointCollection x:Key="ConnectorLocation">540,546 540,576 300,576 300,594</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="LogMessage_5">
@@ -425,11 +425,12 @@
                                     <FlowStep x:Name="__ReferenceID7">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <av:Point x:Key="ShapeLocation">440,596</av:Point>
+                                          <av:Point x:Key="ShapeLocation">200,594</av:Point>
                                           <av:Size x:Key="ShapeSize">200,53</av:Size>
+                                          <av:PointCollection x:Key="ConnectorLocation">300,646 300,687.5</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="734,2288" sap2010:WorkflowViewState.IdRef="ForEach`1_4" MaxIterations="5">
+                                      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="ForEach`1_4" MaxIterations="5">
                                         <ui:ForEach.Body>
                                           <ActivityAction x:TypeArguments="sd:DataRow">
                                             <ActivityAction.Argument>
@@ -608,6 +609,23 @@
                                           </InArgument>
                                         </ui:ForEach.Values>
                                       </ui:ForEach>
+                                      <FlowStep.Next>
+                                        <FlowStep x:Name="__ReferenceID8">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <av:Point x:Key="ShapeLocation">200,687.5</av:Point>
+                                              <av:Size x:Key="ShapeSize">200,25</av:Size>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:DatabaseDisconnect DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1">
+                                            <ui:DatabaseDisconnect.DatabaseConnection>
+                                              <InArgument x:TypeArguments="ui:DatabaseConnection">
+                                                <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">env_connection</CSharpValue>
+                                              </InArgument>
+                                            </ui:DatabaseDisconnect.DatabaseConnection>
+                                          </ui:DatabaseDisconnect>
+                                        </FlowStep>
+                                      </FlowStep.Next>
                                     </FlowStep>
                                   </FlowStep.Next>
                                 </FlowStep>
@@ -633,5 +651,6 @@
     <x:Reference>__ReferenceID5</x:Reference>
     <x:Reference>__ReferenceID6</x:Reference>
     <x:Reference>__ReferenceID7</x:Reference>
+    <x:Reference>__ReferenceID8</x:Reference>
   </Flowchart>
 </Activity>
