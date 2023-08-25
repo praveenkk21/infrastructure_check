@@ -1,1 +1,1 @@
-{"Workflows":[{"FilePath":"ConfigDeserializer.xaml","Activities":[]},{"FilePath":"DB_Connection.xaml","Activities":[]},{"FilePath":"Infrastructure_check.xaml","Activities":[]},{"FilePath":"api_check.xaml","Activities":[]}]}
+{"Workflows":[{"FilePath":"Infrastructure_check.xaml","Activities":[]},{"FilePath":"api_check.xaml","Activities":[]}]}
