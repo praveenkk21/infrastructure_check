@@ -49,14 +49,14 @@
         "editingStatus": "InProgress",
         "testCaseId": "1546748c-6e66-4c29-aee5-6243817bb81e",
         "testCaseType": "TestCase",
-        "fileName": "ConfigDeserializer.xaml"
+        "fileName": "ConfigDeserializer_test.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "d5cb4400-ce29-4517-b404-d5f3f7872107",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "DB_Connection.xaml"
+        "fileName": "DB_Connection_test.xaml"
       }
     ],
     "modernBehavior": true
