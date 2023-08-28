@@ -4,6 +4,7 @@
   "description": "infrastructure_check",
   "main": "Main.xaml",
   "dependencies": {
+    "InternalLabs.MongoDB.Activities": "[1.0.1]",
     "UiPath.Database.Activities": "[1.7.1]",
     "UiPath.Excel.Activities": "[2.22.0-preview]",
     "UiPath.System.Activities": "23.6.0-preview",

@@ -17,5 +17,6 @@
     "CaretrackerMaria",
     "ConfigurationDb"
   ],
-  "maria_db_dsn":"maria_db"
+  "maria_db_dsn":"maria_db",
+  "mongo_db_string":"mongodb://mvvuser:QXWH7GbMRVSg3FM4q@192.168.5.5:27017"
 }
