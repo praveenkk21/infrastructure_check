@@ -435,7 +435,7 @@
                                           <av:PointCollection x:Key="ConnectorLocation">440,600 400,600</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" Url="chrome://newtab">
+                                      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="OpenBrowser_5" Url="chrome://newtab">
                                         <ui:OpenBrowser.Body>
                                           <ActivityAction x:TypeArguments="x:Object">
                                             <ActivityAction.Argument>
@@ -453,19 +453,19 @@
                                               <av:PointCollection x:Key="ConnectorLocation">300,626 300,667.5</av:PointCollection>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ForEach`1_4" MaxIterations="5">
+                                          <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ForEach`1_4" MaxIterations="10">
                                             <ui:ForEach.Body>
                                               <ActivityAction x:TypeArguments="sd:DataRow">
                                                 <ActivityAction.Argument>
                                                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="currentDataRow" />
                                                 </ActivityAction.Argument>
-                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="638,2484" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="638,2481" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="596,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                                  <Assign sap:VirtualizedContainerService.HintSize="596,81" sap2010:WorkflowViewState.IdRef="Assign_5">
                                                     <Assign.To>
                                                       <OutArgument x:TypeArguments="x:Int32">
                                                         <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">k</CSharpReference>
@@ -477,7 +477,7 @@
                                                       </InArgument>
                                                     </Assign.Value>
                                                   </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="596,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                                  <Assign sap:VirtualizedContainerService.HintSize="596,81" sap2010:WorkflowViewState.IdRef="Assign_3">
                                                     <Assign.To>
                                                       <OutArgument x:TypeArguments="x:String">
                                                         <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">api_data_code</CSharpReference>
@@ -489,7 +489,7 @@
                                                       </InArgument>
                                                     </Assign.Value>
                                                   </Assign>
-                                                  <Assign sap:VirtualizedContainerService.HintSize="596,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                  <Assign sap:VirtualizedContainerService.HintSize="596,81" sap2010:WorkflowViewState.IdRef="Assign_4">
                                                     <Assign.To>
                                                       <OutArgument x:TypeArguments="x:String">
                                                         <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">api_data_url</CSharpReference>
