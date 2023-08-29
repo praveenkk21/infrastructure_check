@@ -1,1 +1,1 @@
-{"Workflows":[{"FilePath":"Infrastructure_check.xaml","Activities":[]},{"FilePath":"api_check.xaml","Activities":[]},{"FilePath":"DB_Connection_test.xaml","Activities":[]}]}
+{"Workflows":[{"FilePath":"Infrastructure_check.xaml","Activities":[]},{"FilePath":"api_check.xaml","Activities":[]},{"FilePath":"DB_Connection_test.xaml","Activities":[]},{"FilePath":"ErrorLogs.xaml","Activities":[]}]}
