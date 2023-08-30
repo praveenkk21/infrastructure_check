@@ -19,7 +19,7 @@
   ],
   "maria_db_dsn":"maria_db",
   "mongo_db_string":"mongodb://mvvuser:QXWH7GbMRVSg3FM4q@192.168.5.5:27017",
-  "error_file_path": "C:\\Users\\praveenkumar\\Documents\\UiPath\\infrastructure_check\\infrastructure_check",
+  "error_file_path": "C:\\Users\\Praveen k\\Documents\\UiPath\\infrs_check",
   "api_code":[
   	   "zadmin",
       "clientservicertb",
