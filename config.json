@@ -1,6 +1,6 @@
 ﻿{
-  "instance_code": "Working",
-  "zephyr_environments_connection_string": "Data Source=192.168.2.231;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=medicaresqluser;Password=kantime_123;Max Pool Size=500;",
+  "instance_code": "Prodmaster",
+  "zephyr_environments_connection_string": "Data Source=10.16.17.179;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=sa;Password=platinum_50;",
   "sql_server_databases": [
     "Master",
 	 "Private",
@@ -19,15 +19,16 @@
   ],
   "maria_db_dsn":"maria_db",
   "mongo_db_string":"mongodb://mvvuser:QXWH7GbMRVSg3FM4q@192.168.5.5:27017",
-  "error_file_path": "C:\\Users\\Praveen k\\Documents\\UiPath\\infrs_check",
+  "error_file_path": "C:\\Users\\praveenkumar\\Documents\\UiPath\\infrastructure_check\\infrastructure_check",
   "api_code":[
   	   "zadmin",
       "clientservicertb",
 	  "userservicertb",
 	  "authservicertb",
-	  "payrollservicertb",
 	  "billingservicertb",
 	  "reportservicertb",
 	  "formservicertb"
-  ]
+  ],
+  "hha":1,
+  "user_id":1
 }

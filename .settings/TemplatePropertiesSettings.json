@@ -1,1 +1,1 @@
-{"Workflows":[{"FilePath":"Infrastructure_check.xaml","Activities":[]},{"FilePath":"api_check.xaml","Activities":[]},{"FilePath":"DB_Connection_test.xaml","Activities":[]},{"FilePath":"ErrorLogs.xaml","Activities":[]},{"FilePath":"api_request.xaml","Activities":[]}]}
+{"Workflows":[{"FilePath":"Infrastructure_check.xaml","Activities":[]},{"FilePath":"api_check.xaml","Activities":[]},{"FilePath":"DB_Connection_test.xaml","Activities":[]},{"FilePath":"ErrorLogs.xaml","Activities":[]},{"FilePath":"api_request_output.xaml","Activities":[]}]}
