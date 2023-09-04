@@ -150,3 +150,37 @@ Possible solutions:
  •  Use "Check state" activity to check the application state before executing the action
  •  Increase the "Delay before" value to allow time to the application to render entirely and become responsive
 09/01/2023 15:57:58:-  formservicertb UI test is failed, infrastructure_check_Expressions_api_check due to : Object reference not set to an instance of an object.
+09/04/2023 11:15:48:-  exception.Source.ToString() due to : exception.Message.ToString()
+09/04/2023 11:35:00:- Error: Events.published DB test is failed due to 0 records
+09/04/2023 11:35:00:- Error: Events.received DB test is failed due to 0 records
+09/04/2023 11:35:10:- Error: test DB test is failed due to 0 records
+09/04/2023 11:35:10:- Error: Schedules.published DB test is failed due to 0 records
+09/04/2023 11:35:11:- Error: Schedules.received DB test is failed due to 0 records
+09/04/2023 11:35:11:- Error: test DB test is failed due to 0 records
+09/04/2023 11:35:14:- Error: WorkerSvc.Store.server DB test is failed due to 0 records
+09/04/2023 11:35:15:- Error: WorkerSvc.Store.locks DB test is failed due to 0 records
+09/04/2023 11:35:16:- Error: WorkerSvc.Store.migrationLock DB test is failed due to 0 records
+
+09/04/2023 13:33:23:-  Core Microsoft SqlClient Data Provider due to : A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+09/04/2023 13:35:12:-  Private DB test is failed, Core Microsoft SqlClient Data Provider due to : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+09/04/2023 13:35:12:-  infrastructure_check_Expressions_Infrastructure_check due to : Object reference not set to an instance of an object.
+09/04/2023 13:35:24:- Error: test_c DB test is failed due to 0 records
+09/04/2023 13:35:25:- Error: org_permissions DB test is failed due to 0 records
+09/04/2023 13:35:25:- Error: PublishQueue DB test is failed due to 0 records
+09/04/2023 13:35:25:- Error: MessageSubscriptionSuccessHistory DB test is failed due to 0 records
+09/04/2023 13:35:25:- Error: MessageSubscriptionsInRetryQueue DB test is failed due to 0 records
+09/04/2023 13:35:25:- Error: sys_coordinator_labels DB test is failed due to 0 records
+09/04/2023 13:35:25:- Error: TelephonyActivity DB test is failed due to 0 records
+09/04/2023 13:35:25:- Error: org_coordinator_labels DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: fobsmaster DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: org_roles DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: sys_permissions DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: test DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: org_users DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: PublishFailureHistory DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: RateMaster DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: Test DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: MobileApiLogs DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: ImportApiLogs DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: OpenApiLogs DB test is failed due to 0 records
+09/04/2023 13:35:26:- Error: Authorization DB test is failed due to 0 records

@@ -1,6 +1,6 @@
 ﻿{
-  "instance_code": "Dev",
-  "zephyr_environments_connection_string": "Data Source=10.16.17.178;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=sa;Password=platinum_50;",
+  "instance_code": "Working",
+  "zephyr_environments_connection_string": "Data Source=192.168.2.231;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=medicaresqluser;Password=kantime_123",
   "sql_server_databases": [
     "Master",
 	 "Private",
@@ -17,9 +17,9 @@
     "CaretrackerMaria",
     "ConfigurationDb"
   ],
-  "maria_db_dsn":"maria_db",
+  "maria_db_dsn":"maria_db_working",
   "mongo_db_string":"mongodb://mvvuser:QXWH7GbMRVSg3FM4q@192.168.5.5:27017",
-  "error_file_path": "C:\\Users\\praveenkumar\\Documents\\UiPath\\infrastructure_check",
+  "error_file_path": "C:\\Users\\praveenkumar\\Documents\\UiPath\\infrastructure_check\\infrastructure_check",
   "api_code":[
   	   "zadmin",
       "clientservicertb",
