@@ -3,7 +3,7 @@
     <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1031,1580</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1031,1620</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -473,7 +473,7 @@
                                           <av:PointCollection x:Key="ConnectorLocation">330,566 330,606</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient">
+                                      <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -521,7 +521,7 @@
                                                   <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each for api" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ForEach`1_5">
+                                              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each for api" sap:VirtualizedContainerService.HintSize="564,583" sap2010:WorkflowViewState.IdRef="ForEach`1_5">
                                                 <ui:ForEach.Body>
                                                   <ActivityAction x:TypeArguments="x:Object">
                                                     <ActivityAction.Argument>
@@ -539,7 +539,7 @@
                                                       </sap:WorkflowViewStateService.ViewState>
                                                       <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,309" sap2010:WorkflowViewState.IdRef="TryCatch_10">
                                                         <TryCatch.Try>
-                                                          <Sequence sap:VirtualizedContainerService.HintSize="836,7886" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="836,7885" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -655,19 +655,19 @@
                                                                 </InArgument>
                                                               </Assign.Value>
                                                             </Assign>
-                                                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="774,6733" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="8772ee85-050e-4cd1-964a-cb970065a2d2" Version="V2">
+                                                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="774,6732" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8772ee85-050e-4cd1-964a-cb970065a2d2" Version="V2">
                                                               <uix:NApplicationCard.Body>
                                                                 <ActivityAction x:TypeArguments="x:Object">
                                                                   <ActivityAction.Argument>
                                                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                                   </ActivityAction.Argument>
-                                                                  <Sequence sap:VirtualizedContainerService.HintSize="740,6596" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                                                  <Sequence sap:VirtualizedContainerService.HintSize="740,6595" sap2010:WorkflowViewState.IdRef="Sequence_55">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <Sequence DisplayName="swagger url and API bock" sap:VirtualizedContainerService.HintSize="678,5902" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                                                    <Sequence DisplayName="swagger url and API bock" sap:VirtualizedContainerService.HintSize="678,5901" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                                                       <Sequence.Variables>
                                                                         <Variable x:TypeArguments="x:String" Name="output_data" />
                                                                         <Variable x:TypeArguments="x:Int32" Name="output_code" />
@@ -684,7 +684,7 @@
                                                                           </InArgument>
                                                                         </uix:NGoToUrl.Url>
                                                                       </uix:NGoToUrl>
-                                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="616,1957" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="616,1956" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                                                         <Sequence.Variables>
                                                                           <Variable x:TypeArguments="x:String" Name="text_api" />
                                                                         </Sequence.Variables>
@@ -693,9 +693,9 @@
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="489,765" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="489,764" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                                                                           <TryCatch.Try>
-                                                                            <Sequence sap:VirtualizedContainerService.HintSize="450.2857142857143,536" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                                            <Sequence sap:VirtualizedContainerService.HintSize="451,535" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                                                               <Sequence.Variables>
                                                                                 <Variable x:TypeArguments="x:String" Name="code" />
                                                                                 <Variable x:TypeArguments="x:String" Name="test" />
