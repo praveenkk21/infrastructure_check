@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Infrastructure_check" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1001,1453" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sds="clr-namespace:System.Data.SqlClient;assembly=System.Data.SqlClient" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Infrastructure_check" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1001,1413" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sds="clr-namespace:System.Data.SqlClient;assembly=System.Data.SqlClient" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -209,9 +209,7 @@
                     <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_165">Directory.GetCurrentDirectory().ToString()</CSharpValue>
                     </InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                      <Literal x:TypeArguments="x:String">Error</Literal>
-                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_164">exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
                     </InArgument>
@@ -386,7 +384,7 @@
                                   <av:PointCollection x:Key="ConnectorLocation">530,456 530,486 290,486 290,494</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <TryCatch DisplayName="Env TryCatch" sap:VirtualizedContainerService.HintSize="438,288" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                              <TryCatch DisplayName="Env TryCatch" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                                 <TryCatch.Try>
                                   <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -441,9 +439,7 @@
                                             <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                                               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_184">error_file_path</CSharpValue>
                                             </InArgument>
-                                            <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                                              <Literal x:TypeArguments="x:String">Error</Literal>
-                                            </InArgument>
+                                            <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                                             <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                                               <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_166">exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
                                             </InArgument>
@@ -580,7 +576,7 @@
                                                         <ActivityAction.Argument>
                                                           <DelegateInArgument x:TypeArguments="x:Object" Name="currentKeyValuePairOfTextAndJToken" />
                                                         </ActivityAction.Argument>
-                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="532,1361" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="576,2212" sap2010:WorkflowViewState.IdRef="Sequence_1">
                                                           <Sequence.Variables>
                                                             <Variable x:TypeArguments="sd:DataTable" Name="current_data" />
                                                             <Variable x:TypeArguments="x:String" Name="c_string" />
@@ -591,96 +587,92 @@
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="490,371" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-                                                            <ui:CommentOut.Body>
-                                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,141" sap2010:WorkflowViewState.IdRef="LogMessage_29">
+                                                            <ui:LogMessage.Level>
+                                                              <InArgument x:TypeArguments="ui:LogLevel">
+                                                                <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_149">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
+                                                              </InArgument>
+                                                            </ui:LogMessage.Level>
+                                                            <ui:LogMessage.Message>
+                                                              <InArgument x:TypeArguments="x:Object">
+                                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">
+                                                                  <CSharpValue.Result>
+                                                                    <OutArgument x:TypeArguments="x:Object" />
+                                                                  </CSharpValue.Result>currentKeyValuePairOfTextAndJToken.ToString()</CSharpValue>
+                                                              </InArgument>
+                                                            </ui:LogMessage.Message>
+                                                          </ui:LogMessage>
+                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,882" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                                            <TryCatch.Try>
+                                                              <Sequence sap:VirtualizedContainerService.HintSize="496,632" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_9">
+                                                                <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2">
+                                                                  <ui:ExecuteQuery.DataTable>
+                                                                    <OutArgument x:TypeArguments="sd:DataTable">
+                                                                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">current_data</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </ui:ExecuteQuery.DataTable>
+                                                                  <ui:ExecuteQuery.ExistingDbConnection>
+                                                                    <InArgument x:TypeArguments="ui:DatabaseConnection">
+                                                                      <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">env_connection</CSharpValue>
+                                                                    </InArgument>
+                                                                  </ui:ExecuteQuery.ExistingDbConnection>
+                                                                  <ui:ExecuteQuery.Parameters>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                                  </ui:ExecuteQuery.Parameters>
+                                                                  <ui:ExecuteQuery.Sql>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">"select ConnectionString from InstanceConnectionStrings where InstanceCode = '"+instance_code+"' and ReadWriteMode = 'ReadWrite' and [database] in ( 'MSSQL' ) and DatabaseType in ('"+currentKeyValuePairOfTextAndJToken+"') order by [database]"</CSharpValue>
+                                                                    </InArgument>
+                                                                  </ui:ExecuteQuery.Sql>
+                                                                </ui:ExecuteQuery>
+                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_26">
                                                                   <ui:LogMessage.Level>
                                                                     <InArgument x:TypeArguments="ui:LogLevel">
-                                                                      <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_149">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
+                                                                      <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_150">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
                                                                     </InArgument>
                                                                   </ui:LogMessage.Level>
                                                                   <ui:LogMessage.Message>
                                                                     <InArgument x:TypeArguments="x:Object">
-                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">
-                                                                        <CSharpValue.Result>
-                                                                          <OutArgument x:TypeArguments="x:Object" />
-                                                                        </CSharpValue.Result>currentKeyValuePairOfTextAndJToken.ToString()</CSharpValue>
+                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">current_data.Rows[0]["ConnectionString"]</CSharpValue>
                                                                     </InArgument>
                                                                   </ui:LogMessage.Message>
                                                                 </ui:LogMessage>
+                                                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">c_string</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_136">current_data.Rows[0]["ConnectionString"]+";"+"Encrypt=False"</CSharpValue>
+                                                                    </InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_3" ProviderName="Microsoft.Data.SqlClient" Sql="select * from sys.tables">
+                                                                  <ui:ExecuteQuery.ConnectionString>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_137">current_data.Rows[0]["ConnectionString"]+"; "+"Encrypt=False"</CSharpValue>
+                                                                    </InArgument>
+                                                                  </ui:ExecuteQuery.ConnectionString>
+                                                                  <ui:ExecuteQuery.DataTable>
+                                                                    <OutArgument x:TypeArguments="sd:DataTable">
+                                                                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">current_data_2</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </ui:ExecuteQuery.DataTable>
+                                                                  <ui:ExecuteQuery.Parameters>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                                  </ui:ExecuteQuery.Parameters>
+                                                                </ui:ExecuteQuery>
                                                               </Sequence>
-                                                            </ui:CommentOut.Body>
-                                                          </ui:CommentOut>
-                                                          <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="490,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2">
-                                                            <ui:ExecuteQuery.DataTable>
-                                                              <OutArgument x:TypeArguments="sd:DataTable">
-                                                                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">current_data</CSharpReference>
-                                                              </OutArgument>
-                                                            </ui:ExecuteQuery.DataTable>
-                                                            <ui:ExecuteQuery.ExistingDbConnection>
-                                                              <InArgument x:TypeArguments="ui:DatabaseConnection">
-                                                                <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">env_connection</CSharpValue>
-                                                              </InArgument>
-                                                            </ui:ExecuteQuery.ExistingDbConnection>
-                                                            <ui:ExecuteQuery.Parameters>
-                                                              <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                                            </ui:ExecuteQuery.Parameters>
-                                                            <ui:ExecuteQuery.Sql>
-                                                              <InArgument x:TypeArguments="x:String">
-                                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">"select ConnectionString from InstanceConnectionStrings where InstanceCode = '"+instance_code+"' and ReadWriteMode = 'ReadWrite' and [database] in ( 'MSSQL' ) and DatabaseType in ('"+currentKeyValuePairOfTextAndJToken+"') order by [database]"</CSharpValue>
-                                                              </InArgument>
-                                                            </ui:ExecuteQuery.Sql>
-                                                          </ui:ExecuteQuery>
-                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="490,141" sap2010:WorkflowViewState.IdRef="LogMessage_26">
-                                                            <ui:LogMessage.Level>
-                                                              <InArgument x:TypeArguments="ui:LogLevel">
-                                                                <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_150">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
-                                                              </InArgument>
-                                                            </ui:LogMessage.Level>
-                                                            <ui:LogMessage.Message>
-                                                              <InArgument x:TypeArguments="x:Object">
-                                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">current_data.Rows[0]["ConnectionString"]</CSharpValue>
-                                                              </InArgument>
-                                                            </ui:LogMessage.Message>
-                                                          </ui:LogMessage>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="490,82" sap2010:WorkflowViewState.IdRef="Assign_4">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">
-                                                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">c_string</CSharpReference>
-                                                              </OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">
-                                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_136">current_data.Rows[0]["ConnectionString"]+";"+"Encrypt=False"</CSharpValue>
-                                                              </InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
-                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,206" sap2010:WorkflowViewState.IdRef="TryCatch_2">
-                                                            <TryCatch.Try>
-                                                              <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_3" ProviderName="Microsoft.Data.SqlClient" Sql="select * from sys.tables">
-                                                                <ui:ExecuteQuery.ConnectionString>
-                                                                  <InArgument x:TypeArguments="x:String">
-                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_137">current_data.Rows[0]["ConnectionString"]+"; "+"Encrypt=False"</CSharpValue>
-                                                                  </InArgument>
-                                                                </ui:ExecuteQuery.ConnectionString>
-                                                                <ui:ExecuteQuery.DataTable>
-                                                                  <OutArgument x:TypeArguments="sd:DataTable">
-                                                                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">current_data_2</CSharpReference>
-                                                                  </OutArgument>
-                                                                </ui:ExecuteQuery.DataTable>
-                                                                <ui:ExecuteQuery.Parameters>
-                                                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                                                </ui:ExecuteQuery.Parameters>
-                                                              </ui:ExecuteQuery>
                                                             </TryCatch.Try>
                                                             <TryCatch.Catches>
-                                                              <Catch x:TypeArguments="sds:SqlException" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                                              <Catch x:TypeArguments="sds:SqlException" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -705,7 +697,7 @@
                                                                   </ui:LogMessage>
                                                                 </ActivityAction>
                                                               </Catch>
-                                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -716,7 +708,7 @@
                                                                   <ActivityAction.Argument>
                                                                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                                   </ActivityAction.Argument>
-                                                                  <Sequence sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                                  <Sequence sap:VirtualizedContainerService.HintSize="450,405" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -739,9 +731,7 @@
                                                                         <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_185">error_file_path</CSharpValue>
                                                                         </InArgument>
-                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                                                                          <Literal x:TypeArguments="x:String">Error</Literal>
-                                                                        </InArgument>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                                                                         <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_158">currentKeyValuePairOfTextAndJToken+" DB test is failed, " +exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
                                                                         </InArgument>
@@ -752,7 +742,7 @@
                                                               </Catch>
                                                             </TryCatch.Catches>
                                                           </TryCatch>
-                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,184" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,1021" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -811,9 +801,7 @@
                                                                         <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_189">error_file_path</CSharpValue>
                                                                         </InArgument>
-                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                                                                          <Literal x:TypeArguments="x:String">Error</Literal>
-                                                                        </InArgument>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                                                                         <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_188">currentKeyValuePairOfTextAndJToken.ToString() + " has " +current_data.Rows.Count + " records, DB test is failed"</CSharpValue>
                                                                         </InArgument>
@@ -824,7 +812,7 @@
                                                               </If>
                                                             </TryCatch.Try>
                                                             <TryCatch.Catches>
-                                                              <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                                                              <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="414,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -835,7 +823,7 @@
                                                                   <ActivityAction.Argument>
                                                                     <DelegateInArgument x:TypeArguments="s:NullReferenceException" Name="exception" />
                                                                   </ActivityAction.Argument>
-                                                                  <Sequence sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                                                  <Sequence sap:VirtualizedContainerService.HintSize="450,405" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -858,9 +846,7 @@
                                                                         <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_186">error_file_path</CSharpValue>
                                                                         </InArgument>
-                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                                                                          <Literal x:TypeArguments="x:String">Error</Literal>
-                                                                        </InArgument>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                                                                         <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_162">exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
                                                                         </InArgument>
@@ -976,13 +962,13 @@
                                                                       <av:PointCollection x:Key="ConnectorLocation">280,1105.5 280,1139</av:PointCollection>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="Maria DB For Each" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
+                                                                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="Maria DB For Each" sap:VirtualizedContainerService.HintSize="562,1830" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
                                                                     <ui:ForEach.Body>
                                                                       <ActivityAction x:TypeArguments="x:Object">
                                                                         <ActivityAction.Argument>
                                                                           <DelegateInArgument x:TypeArguments="x:Object" Name="currentKeyValuePairOfTextAndJToken" />
                                                                         </ActivityAction.Argument>
-                                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="532,2457" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="576,2402" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                                                           <Sequence.Variables>
                                                                             <Variable x:TypeArguments="sd:DataTable" Name="current_data" />
                                                                             <Variable x:TypeArguments="x:String" Name="c_string" />
@@ -994,7 +980,7 @@
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="490,371" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                                                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="534,331" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                                                                             <ui:CommentOut.Body>
                                                                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                                                                 <sap:WorkflowViewStateService.ViewState>
@@ -1020,35 +1006,35 @@
                                                                               </Sequence>
                                                                             </ui:CommentOut.Body>
                                                                           </ui:CommentOut>
-                                                                          <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="490,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5">
-                                                                            <ui:ExecuteQuery.DataTable>
-                                                                              <OutArgument x:TypeArguments="sd:DataTable">
-                                                                                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">current_data_maria</CSharpReference>
-                                                                              </OutArgument>
-                                                                            </ui:ExecuteQuery.DataTable>
-                                                                            <ui:ExecuteQuery.ExistingDbConnection>
-                                                                              <InArgument x:TypeArguments="ui:DatabaseConnection">
-                                                                                <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">env_connection</CSharpValue>
-                                                                              </InArgument>
-                                                                            </ui:ExecuteQuery.ExistingDbConnection>
-                                                                            <ui:ExecuteQuery.Parameters>
-                                                                              <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                                                            </ui:ExecuteQuery.Parameters>
-                                                                            <ui:ExecuteQuery.Sql>
-                                                                              <InArgument x:TypeArguments="x:String">
-                                                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_129">"select ConnectionString from InstanceConnectionStrings where InstanceCode = '"+instance_code+"' and ReadWriteMode = 'ReadWrite' and [database] in ( 'mariadb' ) and DatabaseType in ('"+currentKeyValuePairOfTextAndJToken+"') order by [database]"</CSharpValue>
-                                                                              </InArgument>
-                                                                            </ui:ExecuteQuery.Sql>
-                                                                          </ui:ExecuteQuery>
-                                                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="490,331" sap2010:WorkflowViewState.IdRef="CommentOut_7">
-                                                                            <ui:CommentOut.Body>
-                                                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,882" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                                                            <TryCatch.Try>
+                                                                              <Sequence sap:VirtualizedContainerService.HintSize="496,632" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_18">
+                                                                                <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5">
+                                                                                  <ui:ExecuteQuery.DataTable>
+                                                                                    <OutArgument x:TypeArguments="sd:DataTable">
+                                                                                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">current_data_maria</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </ui:ExecuteQuery.DataTable>
+                                                                                  <ui:ExecuteQuery.ExistingDbConnection>
+                                                                                    <InArgument x:TypeArguments="ui:DatabaseConnection">
+                                                                                      <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">env_connection</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:ExecuteQuery.ExistingDbConnection>
+                                                                                  <ui:ExecuteQuery.Parameters>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                                                  </ui:ExecuteQuery.Parameters>
+                                                                                  <ui:ExecuteQuery.Sql>
+                                                                                    <InArgument x:TypeArguments="x:String">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_129">"select ConnectionString from InstanceConnectionStrings where InstanceCode = '"+instance_code+"' and ReadWriteMode = 'ReadWrite' and [database] in ( 'mariadb' ) and DatabaseType in ('"+currentKeyValuePairOfTextAndJToken+"') order by [database]"</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:ExecuteQuery.Sql>
+                                                                                </ui:ExecuteQuery>
+                                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_31">
                                                                                   <ui:LogMessage.Level>
                                                                                     <InArgument x:TypeArguments="ui:LogLevel">
                                                                                       <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_154">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
@@ -1063,41 +1049,37 @@
                                                                                     </InArgument>
                                                                                   </ui:LogMessage.Message>
                                                                                 </ui:LogMessage>
+                                                                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                                                                  <Assign.To>
+                                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">c_string</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </Assign.To>
+                                                                                  <Assign.Value>
+                                                                                    <InArgument x:TypeArguments="x:String">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_123">current_data_maria.Rows[0]["ConnectionString"]+""</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </Assign.Value>
+                                                                                </Assign>
+                                                                                <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" ProviderName="System.Data.Odbc" Sql="show tables">
+                                                                                  <ui:ExecuteQuery.ConnectionString>
+                                                                                    <InArgument x:TypeArguments="x:String">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_133">"Dsn="+maria_db_dsn+";"+c_string</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:ExecuteQuery.ConnectionString>
+                                                                                  <ui:ExecuteQuery.DataTable>
+                                                                                    <OutArgument x:TypeArguments="sd:DataTable">
+                                                                                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">current_data_2</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </ui:ExecuteQuery.DataTable>
+                                                                                  <ui:ExecuteQuery.Parameters>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                                                  </ui:ExecuteQuery.Parameters>
+                                                                                </ui:ExecuteQuery>
                                                                               </Sequence>
-                                                                            </ui:CommentOut.Body>
-                                                                          </ui:CommentOut>
-                                                                          <Assign sap:VirtualizedContainerService.HintSize="490,82" sap2010:WorkflowViewState.IdRef="Assign_7">
-                                                                            <Assign.To>
-                                                                              <OutArgument x:TypeArguments="x:String">
-                                                                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">c_string</CSharpReference>
-                                                                              </OutArgument>
-                                                                            </Assign.To>
-                                                                            <Assign.Value>
-                                                                              <InArgument x:TypeArguments="x:String">
-                                                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_123">current_data_maria.Rows[0]["ConnectionString"]+""</CSharpValue>
-                                                                              </InArgument>
-                                                                            </Assign.Value>
-                                                                          </Assign>
-                                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,659" sap2010:WorkflowViewState.IdRef="TryCatch_4">
-                                                                            <TryCatch.Try>
-                                                                              <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" ProviderName="System.Data.Odbc" Sql="show tables">
-                                                                                <ui:ExecuteQuery.ConnectionString>
-                                                                                  <InArgument x:TypeArguments="x:String">
-                                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_133">"Dsn="+maria_db_dsn+";"+c_string</CSharpValue>
-                                                                                  </InArgument>
-                                                                                </ui:ExecuteQuery.ConnectionString>
-                                                                                <ui:ExecuteQuery.DataTable>
-                                                                                  <OutArgument x:TypeArguments="sd:DataTable">
-                                                                                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">current_data_2</CSharpReference>
-                                                                                  </OutArgument>
-                                                                                </ui:ExecuteQuery.DataTable>
-                                                                                <ui:ExecuteQuery.Parameters>
-                                                                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                                                                </ui:ExecuteQuery.Parameters>
-                                                                              </ui:ExecuteQuery>
                                                                             </TryCatch.Try>
                                                                             <TryCatch.Catches>
-                                                                              <Catch x:TypeArguments="sds:SqlException" sap:VirtualizedContainerService.HintSize="456,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                                                                              <Catch x:TypeArguments="sds:SqlException" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1122,10 +1104,10 @@
                                                                                   </ui:LogMessage>
                                                                                 </ActivityAction>
                                                                               </Catch>
-                                                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,474" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+                                                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_8">
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
@@ -1156,9 +1138,7 @@
                                                                                         <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_190">error_file_path</CSharpValue>
                                                                                         </InArgument>
-                                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                                                                                          <Literal x:TypeArguments="x:String">Error</Literal>
-                                                                                        </InArgument>
+                                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                                                                                         <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_170">currentKeyValuePairOfTextAndJToken+" DB test is failed, " +exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
                                                                                         </InArgument>
@@ -1169,7 +1149,7 @@
                                                                               </Catch>
                                                                             </TryCatch.Catches>
                                                                           </TryCatch>
-                                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,637" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,1021" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                                                                             <TryCatch.Try>
                                                                               <If sap:VirtualizedContainerService.HintSize="410,793" sap2010:WorkflowViewState.IdRef="If_3">
                                                                                 <If.Condition>
@@ -1222,9 +1202,7 @@
                                                                                         <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_193">error_file_path</CSharpValue>
                                                                                         </InArgument>
-                                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                                                                                          <Literal x:TypeArguments="x:String">Error</Literal>
-                                                                                        </InArgument>
+                                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                                                                                         <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_192">currentKeyValuePairOfTextAndJToken.ToString() + " has " +current_data.Rows.Count + " records, DB test is failed"</CSharpValue>
                                                                                         </InArgument>
@@ -1235,10 +1213,10 @@
                                                                               </If>
                                                                             </TryCatch.Try>
                                                                             <TryCatch.Catches>
-                                                                              <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="456,474" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                                                              <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="414,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
@@ -1269,9 +1247,7 @@
                                                                                         <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_194">error_file_path</CSharpValue>
                                                                                         </InArgument>
-                                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                                                                                          <Literal x:TypeArguments="x:String">Error</Literal>
-                                                                                        </InArgument>
+                                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                                                                                         <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
                                                                                         </InArgument>
@@ -1328,7 +1304,7 @@
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                           <TryCatch sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                                                                             <TryCatch.Try>
-                                                                              <ui:InvokeCode ContinueOnError="{x:Null}" Code="var client = new MongoClient(&quot;&quot;+mongo_db_string+&quot;&quot;);&#xD;&#xA; Console.WriteLine(&quot;Client is = &quot;+client);&#xD;&#xA;int count=0;&#xD;&#xA; var databases = client.ListDatabases().ToList();&#xD;&#xA;&#xD;&#xA;//add one line&#xD;&#xA;&#x9;try{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;using (StreamWriter writer = File.AppendText( error_file_path+&quot;//&quot;+&quot;Error&quot;+&quot;_log.txt&quot;))&#xD;&#xA;            &#x9;&#x9;&#x9;{&#xD;&#xA;                &#x9;&#x9;          writer.WriteLine();&#xD;&#xA;           &#x9;&#x9;&#x9;&#x9; }&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;catch (Exception ex)&#xD;&#xA;       &#x9;&#x9;&#x9; &#x9;{&#xD;&#xA;            &#x9;&#x9;&#x9;Console.WriteLine(&quot;An error occurred while writing to the log file: &quot; + ex.Message);&#xD;&#xA;       &#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;//add one line end&#xD;&#xA;&#xD;&#xA;        foreach (var db in databases)&#xD;&#xA;        { &#xD;&#xA;&#x9;&#x9;&#x9;count ++;&#xD;&#xA;&#x9;&#x9;&#x9;if(count == 10){&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;break;&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;             var databaseName = db[&quot;name&quot;].ToString();&#xD;&#xA;            //Console.WriteLine(&quot;Database: &quot; + databaseName);&#xD;&#xA;&#xD;&#xA;            var database = client.GetDatabase(databaseName);&#xD;&#xA;            var collectionNames = database.ListCollectionNames().ToList();&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;            foreach (var collectionName in collectionNames)&#xD;&#xA;            {&#xD;&#xA;                var collection = database.GetCollection&lt;BsonDocument&gt;(collectionName);&#xD;&#xA;                var totalCount = collection.CountDocuments(new BsonDocument());&#xD;&#xA;&#xD;&#xA;                //Console.WriteLine(&quot;  Collection: &quot; + collectionName);&#xD;&#xA;                //Console.WriteLine(&quot;    Total Count: &quot; + totalCount);&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;if(totalCount&gt;0)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Console.WriteLine(collectionName +&quot; has &quot; + totalCount + &quot; records,DB test is passed&quot;);&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;} &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;else&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Console.WriteLine(collectionName + &quot; DB test is failed due to 0 records&quot;);&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;LogMessage(&quot;Error&quot;,collectionName + &quot; DB test is failed due to 0 records&quot;);&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;void LogMessage(string level, string message)&#xD;&#xA;    {&#xD;&#xA;        string logFilePath = error_file_path+&quot;//&quot;+&quot;Error&quot;+&quot;_log.txt&quot;;&#xD;&#xA;&#xD;&#xA;        try&#xD;&#xA;        {&#xD;&#xA;            using (StreamWriter writer = File.AppendText(logFilePath))&#xD;&#xA;            {&#xD;&#xA;                string logEntry = DateTime.Now.ToString()+ &quot;:- &quot; +level + &quot;: &quot; + message;&#xD;&#xA;                writer.WriteLine(logEntry);&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;        catch (Exception ex)&#xD;&#xA;        {&#xD;&#xA;            Console.WriteLine(&quot;An error occurred while writing to the log file: &quot; + ex.Message);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;" DisplayName="Mongo DB " sap:VirtualizedContainerService.HintSize="334,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+                                                                              <ui:InvokeCode ContinueOnError="{x:Null}" Code="var client = new MongoClient(&quot;&quot;+mongo_db_string+&quot;&quot;);&#xA; Console.WriteLine(&quot;Client is = &quot;+client);&#xA;int count=0;&#xA; var databases = client.ListDatabases().ToList();&#xA;&#xA;//add one line&#xA;&#x9;try{&#xA;&#x9;&#x9;&#x9;&#x9;using (StreamWriter writer = File.AppendText( error_file_path+&quot;//&quot;+&quot;Error&quot;+&quot;_log.txt&quot;))&#xA;            &#x9;&#x9;&#x9;{&#xA;                &#x9;&#x9;          writer.WriteLine();&#xA;           &#x9;&#x9;&#x9;&#x9; }&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;catch (Exception ex)&#xA;       &#x9;&#x9;&#x9; &#x9;{&#xA;            &#x9;&#x9;&#x9;Console.WriteLine(&quot;An error occurred while writing to the log file: &quot; + ex.Message);&#xA;       &#x9;&#x9;&#x9;&#x9;}&#xA;//add one line end&#xA;&#xA;        foreach (var db in databases)&#xA;        { &#xA;&#x9;&#x9;&#x9;count ++;&#xA;&#x9;&#x9;&#x9;if(count == 10){&#xA;&#x9;&#x9;&#x9;&#x9;break;&#xA;&#x9;&#x9;&#x9;}&#xA;             var databaseName = db[&quot;name&quot;].ToString();&#xA;            //Console.WriteLine(&quot;Database: &quot; + databaseName);&#xA;&#xA;            var database = client.GetDatabase(databaseName);&#xA;            var collectionNames = database.ListCollectionNames().ToList();&#xA;&#x9;&#x9;&#x9;&#xA;            foreach (var collectionName in collectionNames)&#xA;            {&#xA;                var collection = database.GetCollection&lt;BsonDocument&gt;(collectionName);&#xA;                var totalCount = collection.CountDocuments(new BsonDocument());&#xA;&#xA;                //Console.WriteLine(&quot;  Collection: &quot; + collectionName);&#xA;                //Console.WriteLine(&quot;    Total Count: &quot; + totalCount);&#xA;&#x9;&#x9;&#x9;&#x9;if(totalCount&gt;0)&#xA;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Console.WriteLine(collectionName +&quot; has &quot; + totalCount + &quot; records,DB test is passed&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;} &#xA;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Console.WriteLine(collectionName + &quot; DB test is failed due to 0 records&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;LogMessage(&quot;Error&quot;,collectionName + &quot; DB test is failed due to 0 records&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;            }&#xA;        }&#xA;&#xA;void LogMessage(string level, string message)&#xA;    {&#xA;        string logFilePath = error_file_path+&quot;//&quot;+&quot;Error&quot;+&quot;_log.txt&quot;;&#xA;&#xA;        try&#xA;        {&#xA;            using (StreamWriter writer = File.AppendText(logFilePath))&#xA;            {&#xA;                string logEntry = DateTime.Now.ToString()+ &quot;:- &quot; +level + &quot;: &quot; + message;&#xA;                writer.WriteLine(logEntry);&#xA;            }&#xA;        }&#xA;        catch (Exception ex)&#xA;        {&#xA;            Console.WriteLine(&quot;An error occurred while writing to the log file: &quot; + ex.Message);&#xA;        }&#xA;    }&#xA;" DisplayName="Mongo DB " sap:VirtualizedContainerService.HintSize="334,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
                                                                                 <ui:InvokeCode.Arguments>
                                                                                   <InArgument x:TypeArguments="x:String" x:Key="mongo_db_string">
                                                                                     <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_144">mongo_db_string</CSharpValue>
@@ -1379,9 +1355,7 @@
                                                                                         <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_196">error_file_path</CSharpValue>
                                                                                         </InArgument>
-                                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                                                                                          <Literal x:TypeArguments="x:String">Error</Literal>
-                                                                                        </InArgument>
+                                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
                                                                                         <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                                                                                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_173">exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
                                                                                         </InArgument>
