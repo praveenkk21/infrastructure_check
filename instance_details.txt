@@ -1,13 +1,4 @@
-﻿instance-dev
-mssql: Data Source=10.16.17.178;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=sa;Password=platinum_50
-mongo: mongodb://10.16.16.174:27017
-maria_db_dev (Need to set under ODBC driver)
--10.16.16.173
--3306
--admin
--kantime1
---------------------------------------------------------------------------------------------------------------------
-instance- Working
+﻿instance- Working
  mssql: Data Source=192.168.2.231;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=medicaresqluser;Password=kantime_123
  mongo: mongodb://mvvuser:QXWH7GbMRVSg3FM4q@192.168.5.5:27017
 maria_db_working (Need to set under ODBC driver)
@@ -16,6 +7,15 @@ maria_db_working (Need to set under ODBC driver)
 -admin
 -kantime1
 ----------------------------------------------------------------------------------------------------------------------
+instance-dev
+mssql: Data Source=10.16.17.178;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=sa;Password=platinum_50
+mongo: mongodb://10.16.16.174:27017
+maria_db_dev (Need to set under ODBC driver)
+-10.16.16.173
+-3306
+-admin
+-kantime1
+--------------------------------------------------------------------------------------------------------------------
 
 instance-PreProd
 mssql: Data Source=10.16.17.178;Initial Catalog=ZephyrEnvironments;Persist Security Info=True;User ID=sa;Password=platinum_50

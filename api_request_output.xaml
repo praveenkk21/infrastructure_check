@@ -5,7 +5,7 @@
     <x:Property Name="error_file_path" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>700,1178</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>700,1331</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -106,7 +106,7 @@
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,141" sap2010:WorkflowViewState.IdRef="LogMessage_2">
       <ui:LogMessage.Level>
         <InArgument x:TypeArguments="ui:LogLevel">
-          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">UiPath.Core.Activities.LogLevel.Warn</CSharpValue>
+          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
         </InArgument>
       </ui:LogMessage.Level>
       <ui:LogMessage.Message>
@@ -166,9 +166,7 @@
               <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">error_file_path</CSharpValue>
               </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
-                <Literal x:TypeArguments="x:String">Error</Literal>
-              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">"API is failed with "+output_code+" response code"</CSharpValue>
               </InArgument>
