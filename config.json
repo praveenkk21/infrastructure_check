@@ -26,10 +26,15 @@
   	   "zadmin",
       "clientservicertb",
 	  "userservicertb",
-	  "authservicertb",
+	  "payerservicertb",
 	  "billingservicertb",
-	  "reportservicertb",
-	  "formservicertb"
+	 "reportservicertb",
+	  "formservicertb",
+	  "scheduleservice",
+	  "agencyservice",
+	  "evvsqlservice",
+	  "publishservice",
+	  "clinicianservicertb"
   ],
   "hha":1,
   "user_id":1
