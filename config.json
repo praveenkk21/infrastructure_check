@@ -41,8 +41,7 @@
 	  "publishservice",
 	  "clinicianservicertb"	  
   ],
-   "apis_without_swagger": ["authservicertb",
-	   "changeorderservicertb"
+   "apis_without_swagger": [
   ],
   "hha":1,
   "user_id":1,

@@ -28,3 +28,24 @@ maria_db_dev (Need to set under ODBC driver)
 
 -----------------------
 Email password should be created from https://security.google.com/settings/security/apppasswords
+
+
+-----API Details----
+Zadmin - api_url+"/helps/pages"
+Client service -- api_url+"/v1/LineOfBussiness"
+user service -- api_url+"/v1/roles"
+client service -- api_host+":"+api_port+"/v1/authorizations?client_id=1254"
+billing service -- api_host+":"+api_port+"/v1/clients/2/payers/nys"
+report service -- api_host+":"+api_port+"/v1/statistics/ny/doh?report_start_date=02%2F23%2F2022&report_end_date=02%2F23%2F2022"
+form service -- api_url+"/Configurations/subforms/VentfomsList"
+medication service --api_url+"/v1/medications/search/medic"
+change order service -- api_host+":"+api_port+"/orders/1213/subforms/ventilators"
+schedule service -- api_url+"/v1/schedules/search/short-list?start_date=09%2F09%2F2022&end_date=09%2F09%2F2022"
+agency service -- api_url+"/v1/agencies/branches"
+evv sql service -- api_url+"/v1/configurations/vendor-connection-codes"
+publish service -- api_url+"/agencies/1"
+clinician service -- api_url+"/v1/clinicians/disciplines"
+payer service -- api_url+"/details/Hha/hhabranchdetails"
+
+
+
