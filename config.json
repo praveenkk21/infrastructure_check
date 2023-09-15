@@ -35,21 +35,23 @@
 	  "payerservicertb",
 	  "billingservicertb",
 	 "reportservicertb",
-	  "formservicertb",
-	  "scheduleservice",
+	  "formservicertb","scheduleservice",
 	  "agencyservice",
 	  "evvsqlservice",
 	  "publishservice",
-	  "clinicianservicertb"
+	  "clinicianservicertb"	  
   ],
-   "apis_without_swagger": ["authservicertb","changeorderservicertb"
+   "apis_without_swagger": ["authservicertb",
+	   "changeorderservicertb"
   ],
   "hha":1,
   "user_id":1,
+   "sender_mail_id":"kenneth.h@kanrad.com",
+   "sender_mail_pwd":"snvlkpfdpiwyoyvf",
   "recipient_list":[
 	  "kenneth.h@kanrad.com",
 	  "praveenkk21@gmail.com"
   ],
-  "error_subject":"error logged from UiPath",
-  "success_subject":"No error found"
+  "error_subject":"Error logged from UiPath",
+  "success_subject":"UiPath Execution successful "
 }

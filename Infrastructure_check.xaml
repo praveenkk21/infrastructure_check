@@ -1350,7 +1350,11 @@
                                   <av:Size x:Key="ShapeSize">200,83</av:Size>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="email sequence" sap:VirtualizedContainerService.HintSize="548,1895" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                              <Sequence DisplayName="email sequence" sap:VirtualizedContainerService.HintSize="548,2141" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="sender_mail_id" />
+                                  <Variable x:TypeArguments="x:String" Name="sender_mail_pwd" />
+                                </Sequence.Variables>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1365,6 +1369,30 @@
                                   <Assign.Value>
                                     <InArgument x:TypeArguments="x:String">
                                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_236">JsonArray.SelectToken("success_subject").ToString()</CSharpValue>
+                                    </InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="486,83" sap2010:WorkflowViewState.IdRef="Assign_36">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">
+                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_66">sender_mail_id</CSharpReference>
+                                    </OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_334">JsonArray.SelectToken("sender_mail_id").ToString()</CSharpValue>
+                                    </InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="486,83" sap2010:WorkflowViewState.IdRef="Assign_35">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">
+                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_67">sender_mail_pwd</CSharpReference>
+                                    </OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_335">JsonArray.SelectToken("sender_mail_pwd").ToString()</CSharpValue>
                                     </InArgument>
                                   </Assign.Value>
                                 </Assign>
@@ -1428,7 +1456,12 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Please check the attachment for error logs" DisplayName="Send SMTP Mail Message" Email="kenneth.h@kanrad.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="SendMail_7" IgnoreCRL="False" IsBodyHtml="False" Password="snvlkpfdpiwyoyvf" Port="465" SecureConnection="Auto" Server="smtp.gmail.com">
+                                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Please check the attachment for error logs" DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="SendMail_7" IgnoreCRL="False" IsBodyHtml="False" Port="465" SecureConnection="Auto" Server="smtp.gmail.com">
+                                              <ui:SendMail.Email>
+                                                <InArgument x:TypeArguments="x:String">
+                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_336">sender_mail_id</CSharpValue>
+                                                </InArgument>
+                                              </ui:SendMail.Email>
                                               <ui:SendMail.Files>
                                                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                                                   <InArgument x:TypeArguments="x:String">
@@ -1436,6 +1469,11 @@
                                                   </InArgument>
                                                 </scg:List>
                                               </ui:SendMail.Files>
+                                              <ui:SendMail.Password>
+                                                <InArgument x:TypeArguments="x:String">
+                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_337">sender_mail_pwd</CSharpValue>
+                                                </InArgument>
+                                              </ui:SendMail.Password>
                                               <ui:SendMail.Subject>
                                                 <InArgument x:TypeArguments="x:String">
                                                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_243">error_subject</CSharpValue>
@@ -1476,18 +1514,23 @@
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" DisplayName="Send SMTP Mail Message" Email="kenneth.h@kanrad.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="SendMail_8" IgnoreCRL="False" IsBodyHtml="False" Password="snvlkpfdpiwyoyvf" Port="465" SecureConnection="Auto" Server="smtp.gmail.com">
-                                                <ui:SendMail.Body>
+                                              <ui:SendMail Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="SendMail_8" IgnoreCRL="False" IsBodyHtml="False" Port="465" SecureConnection="Auto" Server="smtp.gmail.com">
+                                                <ui:SendMail.Email>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_333">"UiPath Execution successful @ " +DateTime.Now</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_338">sender_mail_id</CSharpValue>
                                                   </InArgument>
-                                                </ui:SendMail.Body>
+                                                </ui:SendMail.Email>
                                                 <ui:SendMail.Files>
                                                   <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
                                                 </ui:SendMail.Files>
+                                                <ui:SendMail.Password>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_339">sender_mail_pwd</CSharpValue>
+                                                  </InArgument>
+                                                </ui:SendMail.Password>
                                                 <ui:SendMail.Subject>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_247">success_subject</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_340">success_subject+"@ "+ DateTime.Now</CSharpValue>
                                                   </InArgument>
                                                 </ui:SendMail.Subject>
                                                 <ui:SendMail.To>

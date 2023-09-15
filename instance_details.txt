@@ -25,3 +25,6 @@ maria_db_dev (Need to set under ODBC driver)
 -3306
 -admin
 -kantime1
+
+-----------------------
+Email password should be created from https://security.google.com/settings/security/apppasswords
