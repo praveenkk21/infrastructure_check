@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="700,1210" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="700,2491" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -45,6 +45,8 @@
       <x:String>Microsoft.PowerShell.Commands</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -118,6 +120,11 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>DnsClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap2010:WorkflowViewState.ViewStateManager>
@@ -135,12 +142,14 @@
       <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="570,581" Id="ActivityBuilder_1" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
-  <Sequence sap:VirtualizedContainerService.HintSize="548,1866" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="548,2386" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="JsonFile" />
       <Variable x:TypeArguments="x:Int32" Name="DB_count" />
       <Variable x:TypeArguments="njl:JObject" Name="JsonArray" />
       <Variable x:TypeArguments="njl:JToken" Name="db" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="test" />
+      <Variable x:TypeArguments="upr:ILocalResource" Name="test2" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -295,5 +304,136 @@
       </ui:ForEach.Values>
     </ui:ForEach>
     <ui:Comment sap:VirtualizedContainerService.HintSize="486,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Blank Test Case" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,480" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,401" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="388,70" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" TimeoutMS="6000">
+            <ui:HttpClient.Attachments>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Attachments>
+            <ui:HttpClient.Cookies>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Cookies>
+            <ui:HttpClient.EndPoint>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">api_host+":"+api_port+"/v1/products"</CSharpValue>
+              </InArgument>
+            </ui:HttpClient.EndPoint>
+            <ui:HttpClient.Headers>
+              <InArgument x:TypeArguments="x:String" x:Key="accept">text/plain</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="user">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">user_id</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="instance_code">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">instance_code</CSharpValue>
+              </InArgument>
+            </ui:HttpClient.Headers>
+            <ui:HttpClient.Parameters>
+              <InArgument x:TypeArguments="x:String" x:Key="Parameters">GET</InArgument>
+            </ui:HttpClient.Parameters>
+            <ui:HttpClient.ResponseAttachment>
+              <OutArgument x:TypeArguments="upr:ILocalResource">
+                <CSharpReference x:TypeArguments="upr:ILocalResource" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">test2</CSharpReference>
+              </OutArgument>
+            </ui:HttpClient.ResponseAttachment>
+            <ui:HttpClient.ResponseHeaders>
+              <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">test</CSharpReference>
+              </OutArgument>
+            </ui:HttpClient.ResponseHeaders>
+            <ui:HttpClient.UrlSegments>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.UrlSegments>
+          </ui:HttpClient>
+          <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="388,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" TimeoutMS="6000">
+            <ui:HttpClient.Attachments>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Attachments>
+            <ui:HttpClient.Cookies>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Cookies>
+            <ui:HttpClient.EndPoint>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">api_host+":"+api_port++"/api/Values"</CSharpValue>
+              </InArgument>
+            </ui:HttpClient.EndPoint>
+            <ui:HttpClient.Headers>
+              <InArgument x:TypeArguments="x:String" x:Key="accept">text/plain</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="hha">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">hha</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="user">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">user_id</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="instance_code">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">instance_code</CSharpValue>
+              </InArgument>
+            </ui:HttpClient.Headers>
+            <ui:HttpClient.Parameters>
+              <InArgument x:TypeArguments="x:String" x:Key="Parameters">GET</InArgument>
+            </ui:HttpClient.Parameters>
+            <ui:HttpClient.ResponseAttachment>
+              <OutArgument x:TypeArguments="upr:ILocalResource">
+                <CSharpReference x:TypeArguments="upr:ILocalResource" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">test2</CSharpReference>
+              </OutArgument>
+            </ui:HttpClient.ResponseAttachment>
+            <ui:HttpClient.ResponseHeaders>
+              <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">test</CSharpReference>
+              </OutArgument>
+            </ui:HttpClient.ResponseHeaders>
+            <ui:HttpClient.UrlSegments>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.UrlSegments>
+          </ui:HttpClient>
+          <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="388,70" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" TimeoutMS="6000">
+            <ui:HttpClient.Attachments>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Attachments>
+            <ui:HttpClient.Cookies>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Cookies>
+            <ui:HttpClient.EndPoint>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">api_host+":"+api_port+"/hh/nys/versions/04.0.23?assessment_date=01%2F01%2F2023&amp;application_id=hh"</CSharpValue>
+              </InArgument>
+            </ui:HttpClient.EndPoint>
+            <ui:HttpClient.Headers>
+              <InArgument x:TypeArguments="x:String" x:Key="accept">*/*</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="hha">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">hha</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="user">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">user_id</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="instance_code">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">instance_code</CSharpValue>
+              </InArgument>
+            </ui:HttpClient.Headers>
+            <ui:HttpClient.Parameters>
+              <InArgument x:TypeArguments="x:String" x:Key="Parameters">GET</InArgument>
+            </ui:HttpClient.Parameters>
+            <ui:HttpClient.ResponseAttachment>
+              <OutArgument x:TypeArguments="upr:ILocalResource">
+                <CSharpReference x:TypeArguments="upr:ILocalResource" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">test2</CSharpReference>
+              </OutArgument>
+            </ui:HttpClient.ResponseAttachment>
+            <ui:HttpClient.ResponseHeaders>
+              <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">test</CSharpReference>
+              </OutArgument>
+            </ui:HttpClient.ResponseHeaders>
+            <ui:HttpClient.UrlSegments>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.UrlSegments>
+          </ui:HttpClient>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
   </Sequence>
 </Activity>

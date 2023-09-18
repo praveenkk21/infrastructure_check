@@ -46,6 +46,9 @@ evv sql service -- api_url+"/v1/configurations/vendor-connection-codes"
 publish service -- api_url+"/agencies/1"
 clinician service -- api_url+"/v1/clinicians/disciplines"
 payer service -- api_url+"/details/Hha/hhabranchdetails"
+platformservice -- api_host+":"+api_port+"/v1/products"
+oasisservice -- api_host+":"+api_port++"/api/Values"
+scoregeneration -- api_host+":"+api_port+"/hh/nys/versions/04.0.23?assessment_date=01%2F01%2F2023&application_id=hh"
 
 
 
