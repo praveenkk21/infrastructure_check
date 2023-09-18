@@ -4,6 +4,7 @@
   "sql_server_databases": [
     "Master",
 	 "Private/192.168.2.231/Working_Zephyr4",
+	  "Private/192.168.3.226/Working_Zephyr9",
     "WebLogs",
     "KTLogs",
     "MedicationLexi"    
