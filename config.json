@@ -36,11 +36,15 @@
 	  "payerservicertb",
 	  "billingservicertb",
 	 "reportservicertb",
-	  "formservicertb","scheduleservice",
+	  "formservicertb",
+	  "scheduleservice",
 	  "agencyservice",
 	  "evvsqlservice",
 	  "publishservice",
-	  "clinicianservicertb"	  
+	  "clinicianservicertb",	  
+      "scoregeneration",
+	  "oasisservice",
+	  "platformservice"
   ],
    "apis_without_swagger": [
   ],

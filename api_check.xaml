@@ -177,11 +177,7 @@
       <Variable x:TypeArguments="x:Boolean" Name="IsFileExistsforEmail" />
       <Variable x:TypeArguments="njl:JToken" Name="recipient_list" />
       <Variable x:TypeArguments="njl:JToken" Name="apis_without_swagger" />
-      <Variable x:TypeArguments="x:Boolean" Name="woswagger">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Boolean" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="woswagger" />
       <Variable x:TypeArguments="x:String" Name="output_data" />
       <Variable x:TypeArguments="x:Int32" Name="output_code" />
     </Flowchart.Variables>
@@ -340,11 +336,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">83,199</av:Point>
-              <av:Size x:Key="ShapeSize">434,82</av:Size>
+              <av:Size x:Key="ShapeSize">434,81</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">517,240 660,240</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">instance_code</CSharpReference>
@@ -403,11 +399,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">83,299</av:Point>
-                          <av:Size x:Key="ShapeSize">434,82</av:Size>
+                          <av:Size x:Key="ShapeSize">434,81</av:Size>
                           <av:PointCollection x:Key="ConnectorLocation">300,381 300,389</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_2">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">
                             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">zephyr_environments_connection_string</CSharpReference>
@@ -424,11 +420,11 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">83,389</av:Point>
-                              <av:Size x:Key="ShapeSize">434,82</av:Size>
+                              <av:Size x:Key="ShapeSize">434,81</av:Size>
                               <av:PointCollection x:Key="ConnectorLocation">517,430 543,430 543,440</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_7">
                             <Assign.To>
                               <OutArgument x:TypeArguments="njl:JToken">
                                 <CSharpReference x:TypeArguments="njl:JToken" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">api_code</CSharpReference>
@@ -561,13 +557,13 @@
                                                       <av:PointCollection x:Key="ConnectorLocation">330,746 330,769.5</av:PointCollection>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each for api" sap:VirtualizedContainerService.HintSize="691,6474" sap2010:WorkflowViewState.IdRef="ForEach`1_5">
+                                                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each for api" sap:VirtualizedContainerService.HintSize="753,8439" sap2010:WorkflowViewState.IdRef="ForEach`1_5">
                                                     <ui:ForEach.Body>
                                                       <ActivityAction x:TypeArguments="x:Object">
                                                         <ActivityAction.Argument>
                                                           <DelegateInArgument x:TypeArguments="x:Object" Name="currentKeyValuePairOfTextAndJToken" />
                                                         </ActivityAction.Argument>
-                                                        <Sequence sap:VirtualizedContainerService.HintSize="657,6288" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="719,8253" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                                           <Sequence.Variables>
                                                             <Variable x:TypeArguments="x:String" Name="api_host" />
                                                             <Variable x:TypeArguments="x:String" Name="api_port" />
@@ -577,19 +573,19 @@
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="615,52" sap2010:WorkflowViewState.IdRef="ForEach`1_8">
+                                                          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="677,52" sap2010:WorkflowViewState.IdRef="ForEach`1_8">
                                                             <ui:ForEach.Body>
                                                               <ActivityAction x:TypeArguments="x:Object">
                                                                 <ActivityAction.Argument>
                                                                   <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
                                                                 </ActivityAction.Argument>
-                                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="300,140" sap2010:WorkflowViewState.IdRef="Sequence_99">
+                                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,675" sap2010:WorkflowViewState.IdRef="Sequence_99">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                  <If sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_15">
+                                                                  <If sap:VirtualizedContainerService.HintSize="510,587" sap2010:WorkflowViewState.IdRef="If_15">
                                                                     <If.Condition>
                                                                       <InArgument x:TypeArguments="x:Boolean">
                                                                         <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_702">currentItem.ToString() == currentKeyValuePairOfTextAndJToken.ToString()</CSharpValue>
@@ -597,18 +593,18 @@
                                                                     </If.Condition>
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
                                                                     <If.Then>
-                                                                      <Sequence sap:VirtualizedContainerService.HintSize="476,234" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                                                                      <Sequence sap:VirtualizedContainerService.HintSize="476,235" sap2010:WorkflowViewState.IdRef="Sequence_72">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_27">
+                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_27">
                                                                           <Assign.To>
                                                                             <OutArgument x:TypeArguments="x:Boolean">
                                                                               <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_120">woswagger</CSharpReference>
@@ -622,13 +618,13 @@
                                                                       </Sequence>
                                                                     </If.Then>
                                                                     <If.Else>
-                                                                      <Sequence sap:VirtualizedContainerService.HintSize="476,169" sap2010:WorkflowViewState.IdRef="Sequence_98">
+                                                                      <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_98">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_28">
                                                                           <Assign.To>
                                                                             <OutArgument x:TypeArguments="x:Boolean">
                                                                               <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_121">woswagger</CSharpReference>
@@ -656,124 +652,176 @@
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
                                                           </ui:ForEach>
-                                                          <Sequence DisplayName="gettign api code,url etc" sap:VirtualizedContainerService.HintSize="615,1113" sap2010:WorkflowViewState.IdRef="Sequence_147">
-                                                            <sap:WorkflowViewStateService.ViewState>
-                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                              </scg:Dictionary>
-                                                            </sap:WorkflowViewStateService.ViewState>
-                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_63">
-                                                              <ui:LogMessage.Level>
-                                                                <InArgument x:TypeArguments="ui:LogLevel">
-                                                                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_824">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
-                                                                </InArgument>
-                                                              </ui:LogMessage.Level>
-                                                              <ui:LogMessage.Message>
-                                                                <InArgument x:TypeArguments="x:Object">
-                                                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_836">currentKeyValuePairOfTextAndJToken +" UI and API verification is started"</CSharpValue>
-                                                                </InArgument>
-                                                              </ui:LogMessage.Message>
-                                                            </ui:LogMessage>
-                                                            <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6">
-                                                              <ui:ExecuteQuery.DataTable>
-                                                                <OutArgument x:TypeArguments="sd:DataTable">
-                                                                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_191">env_table_data</CSharpReference>
-                                                                </OutArgument>
-                                                              </ui:ExecuteQuery.DataTable>
-                                                              <ui:ExecuteQuery.ExistingDbConnection>
-                                                                <InArgument x:TypeArguments="ui:DatabaseConnection">
-                                                                  <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_826">env_connection</CSharpValue>
-                                                                </InArgument>
-                                                              </ui:ExecuteQuery.ExistingDbConnection>
-                                                              <ui:ExecuteQuery.Parameters>
-                                                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                                                              </ui:ExecuteQuery.Parameters>
-                                                              <ui:ExecuteQuery.Sql>
-                                                                <InArgument x:TypeArguments="x:String">
-                                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_827">"select apicode,SwaggerURL,apiurl,host,port from apimaster where instancecode='"+instance_code+"' and apicode in ('"+currentKeyValuePairOfTextAndJToken+"')"</CSharpValue>
-                                                                </InArgument>
-                                                              </ui:ExecuteQuery.Sql>
-                                                              <sap:WorkflowViewStateService.ViewState>
-                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                                </scg:Dictionary>
-                                                              </sap:WorkflowViewStateService.ViewState>
-                                                            </ui:ExecuteQuery>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_36">
-                                                              <Assign.To>
-                                                                <OutArgument x:TypeArguments="x:Int32">
-                                                                  <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_192">k</CSharpReference>
-                                                                </OutArgument>
-                                                              </Assign.To>
-                                                              <Assign.Value>
-                                                                <InArgument x:TypeArguments="x:Int32">
-                                                                  <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_828">k+1</CSharpValue>
-                                                                </InArgument>
-                                                              </Assign.Value>
-                                                            </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_37">
-                                                              <Assign.To>
-                                                                <OutArgument x:TypeArguments="x:String">
-                                                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_193">api_data_code</CSharpReference>
-                                                                </OutArgument>
-                                                              </Assign.To>
-                                                              <Assign.Value>
-                                                                <InArgument x:TypeArguments="x:String">
-                                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_829">env_table_data.Rows[0]["apicode"].ToString()</CSharpValue>
-                                                                </InArgument>
-                                                              </Assign.Value>
-                                                            </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_38">
-                                                              <Assign.To>
-                                                                <OutArgument x:TypeArguments="x:String">
-                                                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_194">api_data_url</CSharpReference>
-                                                                </OutArgument>
-                                                              </Assign.To>
-                                                              <Assign.Value>
-                                                                <InArgument x:TypeArguments="x:String">
-                                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_830">env_table_data.Rows[0]["SwaggerURL"].ToString()</CSharpValue>
-                                                                </InArgument>
-                                                              </Assign.Value>
-                                                            </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_39">
-                                                              <Assign.To>
-                                                                <OutArgument x:TypeArguments="x:String">
-                                                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_195">api_url</CSharpReference>
-                                                                </OutArgument>
-                                                              </Assign.To>
-                                                              <Assign.Value>
-                                                                <InArgument x:TypeArguments="x:String">
-                                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_831">env_table_data.Rows[0]["apiurl"].ToString()</CSharpValue>
-                                                                </InArgument>
-                                                              </Assign.Value>
-                                                            </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_40">
-                                                              <Assign.To>
-                                                                <OutArgument x:TypeArguments="x:String">
-                                                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_196">api_host</CSharpReference>
-                                                                </OutArgument>
-                                                              </Assign.To>
-                                                              <Assign.Value>
-                                                                <InArgument x:TypeArguments="x:String">
-                                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_832">env_table_data.Rows[0]["host"].ToString()</CSharpValue>
-                                                                </InArgument>
-                                                              </Assign.Value>
-                                                            </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_41">
-                                                              <Assign.To>
-                                                                <OutArgument x:TypeArguments="x:String">
-                                                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_197">api_port</CSharpReference>
-                                                                </OutArgument>
-                                                              </Assign.To>
-                                                              <Assign.Value>
-                                                                <InArgument x:TypeArguments="x:String">
-                                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_833">env_table_data.Rows[0]["port"].ToString()</CSharpValue>
-                                                                </InArgument>
-                                                              </Assign.Value>
-                                                            </Assign>
-                                                          </Sequence>
-                                                          <If sap:VirtualizedContainerService.HintSize="615,551" sap2010:WorkflowViewState.IdRef="If_19">
+                                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,906" sap2010:WorkflowViewState.IdRef="TryCatch_20">
+                                                            <TryCatch.Try>
+                                                              <Sequence DisplayName="gettign api code,url etc" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_147">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_63">
+                                                                  <ui:LogMessage.Level>
+                                                                    <InArgument x:TypeArguments="ui:LogLevel">
+                                                                      <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_824">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
+                                                                    </InArgument>
+                                                                  </ui:LogMessage.Level>
+                                                                  <ui:LogMessage.Message>
+                                                                    <InArgument x:TypeArguments="x:Object">
+                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_836">currentKeyValuePairOfTextAndJToken +" UI and API verification is started"</CSharpValue>
+                                                                    </InArgument>
+                                                                  </ui:LogMessage.Message>
+                                                                </ui:LogMessage>
+                                                                <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6">
+                                                                  <ui:ExecuteQuery.DataTable>
+                                                                    <OutArgument x:TypeArguments="sd:DataTable">
+                                                                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_191">env_table_data</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </ui:ExecuteQuery.DataTable>
+                                                                  <ui:ExecuteQuery.ExistingDbConnection>
+                                                                    <InArgument x:TypeArguments="ui:DatabaseConnection">
+                                                                      <CSharpValue x:TypeArguments="ui:DatabaseConnection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_826">env_connection</CSharpValue>
+                                                                    </InArgument>
+                                                                  </ui:ExecuteQuery.ExistingDbConnection>
+                                                                  <ui:ExecuteQuery.Parameters>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                                  </ui:ExecuteQuery.Parameters>
+                                                                  <ui:ExecuteQuery.Sql>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_827">"select apicode,SwaggerURL,apiurl,host,port from apimaster where instancecode='"+instance_code+"' and apicode in ('"+currentKeyValuePairOfTextAndJToken+"')"</CSharpValue>
+                                                                    </InArgument>
+                                                                  </ui:ExecuteQuery.Sql>
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                </ui:ExecuteQuery>
+                                                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_36">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:Int32">
+                                                                      <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_192">k</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:Int32">
+                                                                      <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_828">k+1</CSharpValue>
+                                                                    </InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_37">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_193">api_data_code</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_829">env_table_data.Rows[0]["apicode"].ToString()</CSharpValue>
+                                                                    </InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_38">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_194">api_data_url</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_830">env_table_data.Rows[0]["SwaggerURL"].ToString()</CSharpValue>
+                                                                    </InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_39">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_195">api_url</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_831">env_table_data.Rows[0]["apiurl"].ToString()</CSharpValue>
+                                                                    </InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_40">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_196">api_host</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_832">env_table_data.Rows[0]["host"].ToString()</CSharpValue>
+                                                                    </InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_41">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_197">api_port</CSharpReference>
+                                                                    </OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">
+                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_833">env_table_data.Rows[0]["port"].ToString()</CSharpValue>
+                                                                    </InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                              </Sequence>
+                                                            </TryCatch.Try>
+                                                            <TryCatch.Catches>
+                                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,514" sap2010:WorkflowViewState.IdRef="Catch`1_22">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <ActivityAction x:TypeArguments="s:Exception">
+                                                                  <ActivityAction.Argument>
+                                                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                                  </ActivityAction.Argument>
+                                                                  <Sequence sap:VirtualizedContainerService.HintSize="450,405" sap2010:WorkflowViewState.IdRef="Sequence_154">
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_67">
+                                                                      <ui:LogMessage.Level>
+                                                                        <InArgument x:TypeArguments="ui:LogLevel">
+                                                                          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_877">UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                                                                        </InArgument>
+                                                                      </ui:LogMessage.Level>
+                                                                      <ui:LogMessage.Message>
+                                                                        <InArgument x:TypeArguments="x:Object">
+                                                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_878">currentKeyValuePairOfTextAndJToken +" api test is failed, "+exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
+                                                                        </InArgument>
+                                                                      </ui:LogMessage.Message>
+                                                                    </ui:LogMessage>
+                                                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ErrorLogs.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_87" UnSafe="False" WorkflowFileName="ErrorLogs.xaml">
+                                                                      <ui:InvokeWorkflowFile.Arguments>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
+                                                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_880">error_file_path</CSharpValue>
+                                                                        </InArgument>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
+                                                                          <Literal x:TypeArguments="x:String">Error</Literal>
+                                                                        </InArgument>
+                                                                        <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
+                                                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_879">currentKeyValuePairOfTextAndJToken+" api test is failed, "+exception.Source.ToString() + " due to : " + exception.Message.ToString()</CSharpValue>
+                                                                        </InArgument>
+                                                                      </ui:InvokeWorkflowFile.Arguments>
+                                                                    </ui:InvokeWorkflowFile>
+                                                                  </Sequence>
+                                                                </ActivityAction>
+                                                              </Catch>
+                                                            </TryCatch.Catches>
+                                                          </TryCatch>
+                                                          <If sap:VirtualizedContainerService.HintSize="677,1613" sap2010:WorkflowViewState.IdRef="If_19">
                                                             <If.Condition>
                                                               <InArgument x:TypeArguments="x:Boolean">
                                                                 <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_548">woswagger==true</CSharpValue>
@@ -807,17 +855,17 @@
                                                               </Sequence>
                                                             </If.Then>
                                                             <If.Else>
-                                                              <Sequence sap:VirtualizedContainerService.HintSize="300,140" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                                              <Sequence sap:VirtualizedContainerService.HintSize="626,1202" sap2010:WorkflowViewState.IdRef="Sequence_129">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="TryCatch_18">
+                                                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="584,1114" sap2010:WorkflowViewState.IdRef="TryCatch_18">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
                                                                   <TryCatch.Try>
@@ -2240,10 +2288,10 @@
                                                                     </Sequence>
                                                                   </TryCatch.Try>
                                                                   <TryCatch.Catches>
-                                                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="550,150" sap2010:WorkflowViewState.IdRef="Catch`1_20">
+                                                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="550,474" sap2010:WorkflowViewState.IdRef="Catch`1_20">
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
@@ -2251,11 +2299,11 @@
                                                                         <ActivityAction.Argument>
                                                                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                                         </ActivityAction.Argument>
-                                                                        <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                                                        <Sequence sap:VirtualizedContainerService.HintSize="450,405" sap2010:WorkflowViewState.IdRef="Sequence_128">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_61">
@@ -2289,7 +2337,7 @@
                                                               </Sequence>
                                                             </If.Else>
                                                           </If>
-                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="615,52" sap2010:WorkflowViewState.IdRef="LogMessage_64">
+                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="677,52" sap2010:WorkflowViewState.IdRef="LogMessage_64">
                                                             <ui:LogMessage.Level>
                                                               <InArgument x:TypeArguments="ui:LogLevel">
                                                                 <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_834">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
@@ -2307,7 +2355,7 @@
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
                                                           </ui:LogMessage>
-                                                          <TryCatch DisplayName="API If block - Try Catch" sap:VirtualizedContainerService.HintSize="615,4272" sap2010:WorkflowViewState.IdRef="TryCatch_19">
+                                                          <TryCatch DisplayName="API If block - Try Catch" sap:VirtualizedContainerService.HintSize="677,5792" sap2010:WorkflowViewState.IdRef="TryCatch_19">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2315,7 +2363,7 @@
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
                                                             <TryCatch.Try>
-                                                              <If DisplayName="API If" sap:VirtualizedContainerService.HintSize="577,3779" sap2010:WorkflowViewState.IdRef="If_23">
+                                                              <If DisplayName="API If" sap:VirtualizedContainerService.HintSize="639,5299" sap2010:WorkflowViewState.IdRef="If_23">
                                                                 <If.Condition>
                                                                   <InArgument x:TypeArguments="x:Boolean">
                                                                     <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_708">api_data_code=="zadmin"</CSharpValue>
@@ -2388,13 +2436,13 @@
                                                                   </Sequence>
                                                                 </If.Then>
                                                                 <If.Else>
-                                                                  <Sequence sap:VirtualizedContainerService.HintSize="543,3597" sap2010:WorkflowViewState.IdRef="Sequence_145">
+                                                                  <Sequence sap:VirtualizedContainerService.HintSize="605,4806" sap2010:WorkflowViewState.IdRef="Sequence_145">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="501,3509" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                                                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563,4718" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
                                                                       <ui:IfElseIf.ConditionBlocks>
                                                                         <sc1:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                           <ui:IfElseIfBlock BlockType="If">
@@ -3378,27 +3426,242 @@
                                                                               </Sequence>
                                                                             </ui:IfElseIfBlock.Then>
                                                                           </ui:IfElseIfBlock>
-                                                                          <ui:IfElseIfBlock BlockType="Else">
+                                                                          <ui:IfElseIfBlock BlockType="ElseIf">
+                                                                            <ui:IfElseIfBlock.Condition>
+                                                                              <InArgument x:TypeArguments="x:Boolean">
+                                                                                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_852">api_data_code=="platformservice"</CSharpValue>
+                                                                              </InArgument>
+                                                                            </ui:IfElseIfBlock.Condition>
                                                                             <ui:IfElseIfBlock.Then>
-                                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="Sequence_148">
+                                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,334" sap2010:WorkflowViewState.IdRef="Sequence_149">
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_65">
-                                                                                  <ui:LogMessage.Level>
-                                                                                    <InArgument x:TypeArguments="ui:LogLevel">
-                                                                                      <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_840">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
+                                                                                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="388,70" sap2010:WorkflowViewState.IdRef="HttpClient_61" Method="GET" TimeoutMS="6000">
+                                                                                  <ui:HttpClient.Attachments>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.Attachments>
+                                                                                  <ui:HttpClient.Cookies>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.Cookies>
+                                                                                  <ui:HttpClient.EndPoint>
+                                                                                    <InArgument x:TypeArguments="x:String">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_853">api_host+":"+api_port+"/v1/products"</CSharpValue>
                                                                                     </InArgument>
-                                                                                  </ui:LogMessage.Level>
-                                                                                  <ui:LogMessage.Message>
-                                                                                    <InArgument x:TypeArguments="x:Object">
-                                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_841">currentKeyValuePairOfTextAndJToken +" API is not implemented here"</CSharpValue>
+                                                                                  </ui:HttpClient.EndPoint>
+                                                                                  <ui:HttpClient.Headers>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="accept">text/plain</InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="user">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_854">user_id</CSharpValue>
                                                                                     </InArgument>
-                                                                                  </ui:LogMessage.Message>
-                                                                                </ui:LogMessage>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="instance_code">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_855">instance_code</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:HttpClient.Headers>
+                                                                                  <ui:HttpClient.Parameters>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="Parameters">GET</InArgument>
+                                                                                  </ui:HttpClient.Parameters>
+                                                                                  <ui:HttpClient.Result>
+                                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_201">output_data</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </ui:HttpClient.Result>
+                                                                                  <ui:HttpClient.StatusCode>
+                                                                                    <OutArgument x:TypeArguments="x:Int32">
+                                                                                      <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_202">output_code</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </ui:HttpClient.StatusCode>
+                                                                                  <ui:HttpClient.UrlSegments>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.UrlSegments>
+                                                                                </ui:HttpClient>
+                                                                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="api_request_output.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_84" UnSafe="False" WorkflowFileName="api_request_output.xaml">
+                                                                                  <ui:InvokeWorkflowFile.Arguments>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="output_data">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_856">output_data</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:Int32" x:Key="output_code">
+                                                                                      <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_857">output_code</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="error_file_path">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_858">error_file_path</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:InvokeWorkflowFile.Arguments>
+                                                                                </ui:InvokeWorkflowFile>
+                                                                              </Sequence>
+                                                                            </ui:IfElseIfBlock.Then>
+                                                                          </ui:IfElseIfBlock>
+                                                                          <ui:IfElseIfBlock BlockType="ElseIf">
+                                                                            <ui:IfElseIfBlock.Condition>
+                                                                              <InArgument x:TypeArguments="x:Boolean">
+                                                                                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_859">api_data_code=="oasisservice"</CSharpValue>
+                                                                              </InArgument>
+                                                                            </ui:IfElseIfBlock.Condition>
+                                                                            <ui:IfElseIfBlock.Then>
+                                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,334" sap2010:WorkflowViewState.IdRef="Sequence_150">
+                                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                  </scg:Dictionary>
+                                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="388,70" sap2010:WorkflowViewState.IdRef="HttpClient_62" Method="GET" TimeoutMS="6000">
+                                                                                  <ui:HttpClient.Attachments>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.Attachments>
+                                                                                  <ui:HttpClient.Cookies>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.Cookies>
+                                                                                  <ui:HttpClient.EndPoint>
+                                                                                    <InArgument x:TypeArguments="x:String">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_860">api_host+":"+api_port+"/api/Values"</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:HttpClient.EndPoint>
+                                                                                  <ui:HttpClient.Headers>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="accept">text/plain</InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="hha">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_861">hha</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="user">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_862">user_id</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="instance_code">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_863">instance_code</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:HttpClient.Headers>
+                                                                                  <ui:HttpClient.Parameters>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="Parameters">GET</InArgument>
+                                                                                  </ui:HttpClient.Parameters>
+                                                                                  <ui:HttpClient.Result>
+                                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_203">output_data</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </ui:HttpClient.Result>
+                                                                                  <ui:HttpClient.StatusCode>
+                                                                                    <OutArgument x:TypeArguments="x:Int32">
+                                                                                      <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_204">output_code</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </ui:HttpClient.StatusCode>
+                                                                                  <ui:HttpClient.UrlSegments>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.UrlSegments>
+                                                                                </ui:HttpClient>
+                                                                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="api_request_output.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_85" UnSafe="False" WorkflowFileName="api_request_output.xaml">
+                                                                                  <ui:InvokeWorkflowFile.Arguments>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="output_data">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_864">output_data</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:Int32" x:Key="output_code">
+                                                                                      <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_865">output_code</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="error_file_path">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_866">error_file_path</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:InvokeWorkflowFile.Arguments>
+                                                                                </ui:InvokeWorkflowFile>
+                                                                              </Sequence>
+                                                                            </ui:IfElseIfBlock.Then>
+                                                                          </ui:IfElseIfBlock>
+                                                                          <ui:IfElseIfBlock BlockType="ElseIf">
+                                                                            <ui:IfElseIfBlock.Condition>
+                                                                              <InArgument x:TypeArguments="x:Boolean">
+                                                                                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_867">api_data_code=="scoregeneration"</CSharpValue>
+                                                                              </InArgument>
+                                                                            </ui:IfElseIfBlock.Condition>
+                                                                            <ui:IfElseIfBlock.Then>
+                                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,334" sap2010:WorkflowViewState.IdRef="Sequence_151">
+                                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                  </scg:Dictionary>
+                                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="388,70" sap2010:WorkflowViewState.IdRef="HttpClient_63" Method="GET" TimeoutMS="6000">
+                                                                                  <ui:HttpClient.Attachments>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.Attachments>
+                                                                                  <ui:HttpClient.Cookies>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.Cookies>
+                                                                                  <ui:HttpClient.EndPoint>
+                                                                                    <InArgument x:TypeArguments="x:String">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_868">api_host+":"+api_port+"/hh/nys/versions/04.0.23?assessment_date=01%2F01%2F2023&amp;application_id=hh"</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:HttpClient.EndPoint>
+                                                                                  <ui:HttpClient.Headers>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="accept">*/*</InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="hha">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_869">hha</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="user">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_870">user_id</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="instance_code">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_871">instance_code</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:HttpClient.Headers>
+                                                                                  <ui:HttpClient.Parameters>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="Parameters">GET</InArgument>
+                                                                                  </ui:HttpClient.Parameters>
+                                                                                  <ui:HttpClient.Result>
+                                                                                    <OutArgument x:TypeArguments="x:String">
+                                                                                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_205">output_data</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </ui:HttpClient.Result>
+                                                                                  <ui:HttpClient.StatusCode>
+                                                                                    <OutArgument x:TypeArguments="x:Int32">
+                                                                                      <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_206">output_code</CSharpReference>
+                                                                                    </OutArgument>
+                                                                                  </ui:HttpClient.StatusCode>
+                                                                                  <ui:HttpClient.UrlSegments>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                                  </ui:HttpClient.UrlSegments>
+                                                                                </ui:HttpClient>
+                                                                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="api_request_output.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_86" UnSafe="False" WorkflowFileName="api_request_output.xaml">
+                                                                                  <ui:InvokeWorkflowFile.Arguments>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="output_data">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_872">output_data</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:Int32" x:Key="output_code">
+                                                                                      <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_873">output_code</CSharpValue>
+                                                                                    </InArgument>
+                                                                                    <InArgument x:TypeArguments="x:String" x:Key="error_file_path">
+                                                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_874">error_file_path</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </ui:InvokeWorkflowFile.Arguments>
+                                                                                </ui:InvokeWorkflowFile>
+                                                                              </Sequence>
+                                                                            </ui:IfElseIfBlock.Then>
+                                                                          </ui:IfElseIfBlock>
+                                                                          <ui:IfElseIfBlock BlockType="Else">
+                                                                            <ui:IfElseIfBlock.Then>
+                                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_153">
+                                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                                  </scg:Dictionary>
+                                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="Sequence_152">
+                                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                    </scg:Dictionary>
+                                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_66">
+                                                                                    <ui:LogMessage.Level>
+                                                                                      <InArgument x:TypeArguments="ui:LogLevel">
+                                                                                        <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_875">UiPath.Core.Activities.LogLevel.Trace</CSharpValue>
+                                                                                      </InArgument>
+                                                                                    </ui:LogMessage.Level>
+                                                                                    <ui:LogMessage.Message>
+                                                                                      <InArgument x:TypeArguments="x:Object">
+                                                                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_876">currentKeyValuePairOfTextAndJToken +" API is not implemented here"</CSharpValue>
+                                                                                      </InArgument>
+                                                                                    </ui:LogMessage.Message>
+                                                                                  </ui:LogMessage>
+                                                                                </Sequence>
                                                                               </Sequence>
                                                                             </ui:IfElseIfBlock.Then>
                                                                           </ui:IfElseIfBlock>
