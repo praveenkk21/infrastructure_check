@@ -158,7 +158,7 @@
             </ui:LogMessage.Level>
             <ui:LogMessage.Message>
               <InArgument x:TypeArguments="x:Object">
-                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">"API is failed with "+output_code+" response code"</CSharpValue>
+                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">"API is failed with "+output_code+" response code" +", " + output_data</CSharpValue>
               </InArgument>
             </ui:LogMessage.Message>
           </ui:LogMessage>
@@ -167,9 +167,11 @@
               <InArgument x:TypeArguments="x:String" x:Key="argfilepath">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">error_file_path</CSharpValue>
               </InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="argClaimid">Error</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="argClaimid">
+                <Literal x:TypeArguments="x:String">Error</Literal>
+              </InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="argLogtext">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">"API is failed with "+output_code+" response code"</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">"API is failed with "+output_code+" response code" +", " + output_data</CSharpValue>
               </InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
